@@ -1,6 +1,4 @@
-/* =========================================
-   1. SETUP & VARIABEL
-   ========================================= */
+/*SETUP & VARIABEL */
 :root {
     --primary: #2d6a4f;
     --primary-hover: #1b4332;
@@ -31,9 +29,7 @@ body {
 .wadah { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 a { text-decoration: none; transition: all 0.3s ease; }
 
-/* =========================================
-   2. NAVIGASI (Glassmorphism)
-   ========================================= */
+/*NAVIGASI */
 .navigasi {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -89,9 +85,7 @@ a { text-decoration: none; transition: all 0.3s ease; }
     display: flex; align-items: center; gap: 0.5rem;
 }
 
-/* =========================================
-   3. HERO SECTION (Halaman Utama)
-   ========================================= */
+/*Halaman Utama */
 .sampul {
     height: 90vh;
     background-image: url(image.png);
@@ -155,9 +149,7 @@ a { text-decoration: none; transition: all 0.3s ease; }
 }
 .tombol-outline:hover { background: white; color: var(--primary); }
 
-/* =========================================
-   4. KATALOG & KARTU PROPERTI
-   ========================================= */
+/* KATALOG & KARTU PROPERTI */
 .bagian  {padding: 1rem 0 1rem; border-radius: 50px; background-color: #eeecec;}
 .bbagian {padding:3rem 0;}
 .baggian {padding: 3rem 0;}
@@ -258,9 +250,7 @@ a { text-decoration: none; transition: all 0.3s ease; }
     color: var(--text-light); font-size: 0.9rem;
 }
 
-/* =========================================
-   5. FAQ SECTION
-   ========================================= */
+/* FAQ SECTION */
 .faq-container { max-width: 800px; margin: 0 auto; }
 
 .faq-item {
@@ -306,9 +296,7 @@ a { text-decoration: none; transition: all 0.3s ease; }
 
 .faq-item.active .faq-toggle { transform: rotate(45deg); }
 
-/* =========================================
-   6. FOOTER
-   ========================================= */
+/* FOOTER */
 .kaki {
     background-color: var(--primary);
     color: white;
@@ -339,9 +327,7 @@ a { text-decoration: none; transition: all 0.3s ease; }
     color: rgb(231, 205, 205);
 }
 
-/* =========================================
-   7. IKON SOSIAL MEDIA
-   ========================================= */
+/* IKON SOSIAL MEDIA */
 .sosmed-container {
     display: flex; gap: 20px; justify-content: flex-end;
 }
@@ -371,10 +357,7 @@ a { text-decoration: none; transition: all 0.3s ease; }
 .ikon-sosmed-wa:hover { color: #2ac134 !important; }
 .ikon-sosmed-fb:hover { color: #0b2edc !important; }
 
-/* =========================================
-   8. STYLE HALAMAN DETAIL (TEMA TERANG)
-   ========================================= */
-/* Dipakai di: tipeHiro.html, tipeVilla.html, tipeGrand.html */
+/* TEMA TERANG */
 
 body.tema-gelap {
     /* Override: Ubah jadi Putih */
@@ -512,9 +495,7 @@ body.tema-gelap {
     box-shadow: var(--shadow-lg);
 }
 
-/* =========================================
-   9. HAMBURGER & SCROLL BUTTON
-   ========================================= */
+/* HAMBURGER & SCROLL BUTTON */
 .hamburger {
     display: none; background: none; border: none; cursor: pointer; padding: 10px;
 }
@@ -552,9 +533,7 @@ body.tema-gelap {
 .mobile-menu-overlay.active { opacity: 1; visibility: visible; }
 body.no-scroll { overflow: hidden; }
 
-/* =========================================
-   BAGIAN MAPS (LOKASI)
-   ========================================= */
+/* BAGIAN MAPS (LOKASI) */
 .map-wrapper {
     width: 100%;
     height: 450px; /* Tinggi map di Laptop/PC */
@@ -571,9 +550,7 @@ body.no-scroll { overflow: hidden; }
     display: block;
 }
 
-/* =========================================
-   TABLE NAMA KLP
-   =========================================  */
+/*TABLE NAMA KLP */
 table{
     width: 70%;
     margin: 60px auto;
@@ -633,9 +610,7 @@ a.tes:active {
     transform: scale(0.96);
 }
 
-/* =========================================
-   10. RESPONSIF MOBILE (SIDEBAR MENU DARI KIRI)
-   ========================================= */
+/* RESPONSIF MOBILE (SIDEBAR MENU DARI KIRI) */
 @media (max-width: 768px) {
     /* 1. Navbar Adjustment */
     .baris-menu {
@@ -669,7 +644,7 @@ a.tes:active {
     .logo { order: 2; margin: 0 auto; text-align: center; font-size: 1.5iiiiiirem; }
     .tombol-ikon { order: 3; margin-left: auto; font-size: 0.9rem; }
 
-    /* 2. Menu Slide-in dari Kiri (PERUBAHAN UTAMA) */
+    /* Menu Slide-in dari Kiri (PERUBAHAN UTAMA) */
     .menu-kiri {
         display: flex; /* Tetap flex, jangan display: none agar animasi jalan */
         flex-direction: column;
@@ -725,13 +700,13 @@ a.tes:active {
         transition: all 0.3s ease-in-out;
     }
 
-    /* 3. Hero Section Home */
+    /* Hero Section Home */
     .judul-besar { font-size: 2rem; }
     .sampul { height: 60vh; text-align: center; }
     .lapisan-gelap { background: rgba(0,0,0,0.5); justify-content: center; }
     .grup-tombol { justify-content: center; }
 
-    /* 4. TEMA GELAP (Detail Page) */
+    /* TEMA GELAP (Detail Page) */
     .dark-hero-split, .denah-grid {
         display: flex; flex-direction: column; gap: 2rem;
     }
@@ -741,14 +716,14 @@ a.tes:active {
     .judul-tengah, .info-spec h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
     .navigasi { background: rgba(255,255,255,0.95); }
 
-    /* 5. LAYOUT DENAH (2 Kolom) */
+    /* LAYOUT DENAH (2 Kolom) */
     .layout-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px; margin-top: 1rem;
     }
 
-    /* 6. KARTU PROPERTI (2 Kolom) */
+    /* KARTU PROPERTI (2 Kolom) */
     .katalog-grid {
         grid-template-columns: 1fr 1fr;
         gap: 15px;
@@ -760,7 +735,7 @@ a.tes:active {
     .kartu .fitur { font-size: 0.7rem; gap: 2px; }
     .label { font-size: 0.6rem; padding: 4px 10px; }
 
-    /* 7. FOOTER COMPACT */
+    /* FOOTER COMPACT */
     .kaki { padding-top: 3rem; padding-bottom: 1.5rem; }
     .konten-kaki { display: flex; flex-direction: column; gap: 2rem; margin-bottom: 2rem; }
     .kolom-kaki { text-align: center !important; width: 100%; min-width: auto !important; }

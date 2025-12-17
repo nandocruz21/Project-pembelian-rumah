@@ -1,9 +1,5 @@
-// =========================================
-// SCRIPT UTAMA - Green Piece Website
-// =========================================
 
-// --- 1. DOM READY LISTENER ---
-// Menunggu seluruh halaman dimuat sebelum menjalankan fungsi
+// DOM READY LISTENER 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('✅ Script loaded successfully');
     
@@ -15,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// --- 2. HAMBURGER MENU (MOBILE) ---
+//HAMBURGER MENU (MOBILE) 
 function initHamburgerMenu() {
     const hamburger = document.querySelector('.hamburger');
     const menuKiri = document.querySelector('.menu-kiri');
@@ -64,7 +60,7 @@ function initHamburgerMenu() {
     });
 }
 
-// --- 3. FAQ ACCORDION (TANYA JAWAB) ---
+// FAQ ACCORDION (TANYA JAWAB)
 function initFaqToggle() {
     const faqItems = document.querySelectorAll('.faq-item');
     
@@ -87,13 +83,13 @@ function initFaqToggle() {
             // Jika yang diklik belum aktif, maka buka
             if (!isActive) {
                 item.classList.add('active');
-                if (toggleIcon) toggleIcon.textContent = '−'; // Ganti simbol jadi minus
+                if (toggleIcon) toggleIcon.textContent = 'v'; // Ganti simbol jadi minus
             }
         });
     });
 }
 
-// --- 4. SMOOTH SCROLL (GULIR HALUS) ---
+//SMOOTH SCROLL (GULIR HALUS)
 function initSmoothScroll() {
     // Pilih semua link yang diawali dengan '#'
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -137,16 +133,16 @@ function initSmoothScroll() {
     });
 }
 
-// --- 5. SCROLL TO TOP BUTTON ---
+// SCROLL TO TOP BUTTON
 function initScrollToTop() {
-    // 1. Buat elemen tombol secara dinamis
+    // Buat elemen tombol secara dinamis
     const scrollBtn = document.createElement('button');
     scrollBtn.className = 'scroll-to-top';
     scrollBtn.innerHTML = '↑'; // Ikon panah atas
     scrollBtn.setAttribute('aria-label', 'Scroll ke atas');
     document.body.appendChild(scrollBtn);
     
-    // 2. Tampilkan tombol hanya saat di-scroll ke bawah > 300px
+    // Tampilkan tombol hanya saat di-scroll ke bawah > 300px
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 300) {
             scrollBtn.classList.add('visible');
@@ -155,27 +151,12 @@ function initScrollToTop() {
         }
     });
     
-    // 3. Aksi klik untuk kembali ke atas
+    // Aksi klik untuk kembali ke atas
     scrollBtn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
-    
-    // Catatan: Styling CSS tombol ini sudah dipindahkan ke stylee.css
 }
 
-// --- 6. UTILITY (Opsional) ---
-// Fungsi debounce untuk optimasi performa scroll/resize di masa depan
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
