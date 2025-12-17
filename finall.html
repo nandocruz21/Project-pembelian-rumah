@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="stylee.css">
  
 
@@ -37,9 +38,9 @@
         </div>
 
         <!-- Tombol Favorit -->
-        <a href="#favorit" class="tombol-ikon">
+        <!-- <a href="#favorit" class="tombol-ikon">
             <span class="ikon-heart">♥</span> Favorit
-        </a>
+        </a> -->
 
     </div>
 </nav>
@@ -58,7 +59,7 @@
         </div>
     </header>
 
-    <section id="katalog" class="wadah bagian">
+    <section id="katalog" class="wadah baggian">
         <div class="header-bagian">
             <h3 class="judul-bagian">Koleksi Terbatas</h3>
             <p class="sub-judul">Pilih unit terbaik untuk masa depan keluarga Anda.</p>
@@ -69,8 +70,8 @@
             <div class="kartu">
                 <a href="tipeHiro.html" class="link-detail">
                     <div class="area-gambar">
-                        <!-- <span class="label hijau">Tersedia</span> -->
-                        <img src="GambarHiro.jpg" alt="Rumah Tipe A" class="gambar">
+                        <span class="label hijau">Tersedia</span>
+                        <img src="download.jpg" alt="Rumah Tipe A" class="gambar">
                     </div>
                     <div class="info">
                         <div class="info-header">
@@ -79,6 +80,7 @@
                         </div>
                         <div class="garis-pemisah"></div>
                         <div class="fitur">
+                            <span>Tersedia 27 Unit</span>
                             <span>🛏️ 3 KT</span>
                             <span>🚿 2 KM</span>
                             <span>📐 90m²</span>
@@ -90,7 +92,7 @@
             <div class="kartu">
                 <a href="tipeVilla.html" class="link-detail">
                 <div class="area-gambar">
-                    <!-- <span class="label kuning">Dipesan</span> -->
+                    <span class="label kuning">Dipesan</span>
                     <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop" alt="Rumah Tipe B" class="gambar">
                 </div>
                 <div class="info">
@@ -100,9 +102,10 @@
                     </div>
                     <div class="garis-pemisah"></div>
                     <div class="fitur">
+                        <span>Tersedia 15 Unit</span>
                         <span>🛏️ 4 KT</span>
                         <span>🚿 3 KM</span>
-                        <span>📐 120m²</span>
+                        <span>📐 160m²</span>
                     </div>
                 </div>
                 </a>
@@ -111,7 +114,7 @@
             <div class="kartu">
                 <a href="tipeGrand.html" class="link-detail">
                 <div class="area-gambar">
-                    <!-- <span class="label merah">Terjual</span> -->
+                    <span class="label merah">Stok Terbatas</span>
                     <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=600&auto=format&fit=crop" alt="Rumah Tipe C" class="gambar">
                 </div>
                 <div class="info">
@@ -121,9 +124,10 @@
                     </div>
                     <div class="garis-pemisah"></div>
                     <div class="fitur">
-                        <span>🛏️ 2 KT</span>
-                        <span>🚿 1 KM</span>
-                        <span>📐 60m²</span>
+                        <span>Tersedia 4 Unit</span>
+                        <span>🛏️ 9 KT</span>
+                        <span>🚿 8 KM</span>
+                        <span>📐 260m²</span>
                     </div>
                 </div>
             </div>
@@ -201,38 +205,48 @@
         </div>
     </section>
 
+    <!-- maps -->
+     <section id="lokasi" class="wadah bbagian">
+    <div class="header-bagian">
+        <h3 class="judul-bagian">Lokasi Strategis</h3>
+        <p class="sub-judul">Akses mudah ke berbagai fasilitas umum di Sulawesi Selatan.</p>
+    </div>
+
+    <div class="map-wrapper">
+        
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380.2652599301166!2d119.49412702664753!3d-5.202198477360479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1765844928346!5m2!1sid!2sid" 
+        width="600" 
+        height="450" 
+        style="border:0;"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>"
+            
+    </div>
+    </section>
+
     <footer id="kontak" class="kaki">
-    <div class="wadah konten-kaki" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
-
-        <!-- KIRI -->
-        <div class="kolom-kaki" style="flex: 1;">
-            <h3 style="color: #ffffff;">Green Piece.</h3>
-            <p style="color: #ffffff;">Mewujudkan mimpi memiliki hunian ideal yang harmonis dengan alam.</p>
+        <div class="wadah konten-kaki" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
+            <div class="kolom-kaki" style="flex: 1; min-width: 250px;">
+                <h3 style="color: #ffffff;">Green Piece.</h3>
+                <p style="color: #ffffff;">Mewujudkan mimpi memiliki hunian ideal yang harmonis dengan alam.</p>
+            </div>
+            <div class="kolom-kaki" style="flex: 1; min-width: 250px; text-align: right;">
+                <h4 style="color: #ffffff;">Kantor Pemasaran</h4>
+                <p style="color: #ffffff; margin-bottom: 20px;">Jl. Sultan Alauddin No.57, Romangpolong, <br>Kec. Somba Opu, Kabupaten Gowa, Sulawesi Selatan 92113</p>
+                <div class="sosmed-container">
+                     <a href="https://wa.link/op9mny" class="ikon-sosmed-wa"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/syahrularsydd._/" class="ikon-sosmed-ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/jonk.ambonk" class="ikon-sosmed-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
         </div>
-
-        <!-- KANAN -->
-        <div class="kolom-kaki" style="flex: 1; text-align: right;">
-            <h4 style="color: #ffffff;">Kantor Pemasaran</h4>
-            <p style="color: #ffffff;">Jl. Merpati No. 123, Jakarta Selatan</p>
-            <p class="wa">
-                <a href="https://wa.link/op9mny" style="color: #ffffff;">Kontak : 081248678494</a>
-            </p>
-
-            <!-- IG & FB -->
-            <p>
-                <a href="https://instagram.com/" style="color: #ffffff;">Instagram</a>
-            </p>
-            <p>
-                <a href="https://facebook.com/" style="color: #ffffff;">Facebook</a>
-            </p>
+        <div class="copyright">
+            <small>Kelompok 6</small><br>
+            <a href="klp.html">Nama Kelompok</a>
         </div>
-
-    </div>
-
-    <div class="copyright">
-        <small>&copy; 2024 Green Piece Property. Designed elegantly.</small>
-    </div>
-</footer>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
